@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "residual-geometry-merge"
+version = "0.1.0"
+description = "Official implementation of Residual Geometry Merge"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "safetensors>=0.4",
+  "transformers>=4.40",
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "Pillow>=9.5",
+]
+
+[tool.setuptools]
+py-modules = [
+  "rgm_config",
+  "rgm_stage1_gram",
+  "rgm_stage2_gate",
+  "rgm_stage3_merge",
+]

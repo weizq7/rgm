@@ -1,0 +1,21 @@
+{
+  "id": "openmath_nemotron_1p5b",
+  "name": "OpenMath-Nemotron-1.5B with QuestA and JustRL mathematics experts",
+  "base": "PATH_TO_OPENMATH_NEMOTRON_1P5B",
+  "experts": [
+    {
+      "name": "QuestA-Nemotron-1.5B",
+      "path": "PATH_TO_QUESTA_NEMOTRON_1P5B"
+    },
+    {
+      "name": "JustRL-Nemotron-1.5B",
+      "path": "PATH_TO_JUSTRL_NEMOTRON_1P5B"
+    }
+  ],
+  "layers": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+  "defaults": {
+    "ridge": 0.001,
+    "norm_eps": 1e-12,
+    "out_dtype": "bfloat16"
+  }
+}
